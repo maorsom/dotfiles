@@ -3,7 +3,7 @@
 ########################
 #
 
-source /usr/local/share/antigen/antigen.zsh
+source ~/.antigen.zsh
 source ~/.theme_mavam
 source ~/.aliases
 
@@ -31,6 +31,7 @@ antigen bundle zsh-users/zsh-completions
 
 #load theme
 antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen bundle morhetz/gruvbox
 
 #start antigen
 antigen apply
