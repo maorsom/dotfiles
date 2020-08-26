@@ -14,6 +14,7 @@ alias rzsh="source ~/.zshrc"
 
 REPO=$HOME/dotfiles
 alias dotfiles="/usr/bin/git --git-dir=$REPO/.git --work-tree=$REPO"
+alias dotfile="make -C $REPO"
 add-dotfile () {
     [ ! -d "$REPO/$2" ] && mkdir $REPO/$2
     cp $1 $HOME/dotfiles/$2/$1
