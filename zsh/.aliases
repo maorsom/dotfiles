@@ -1,0 +1,22 @@
+alias zshconfig="nvim ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
+
+#edit theme file
+alias thconfig="nvim ~/.theme_mavam"
+
+#edit alias file
+alias alconfig="nvim ~/.aliases"
+
+#reload zsh source
+alias rzsh="source ~/.zshrc"
+
+#dotfiles handles
+
+REPO=$HOME/dotfiles
+alias dotfiles="/usr/bin/git --git-dir=$REPO/.git --work-tree=$REPO"
+add-dotfile () {
+    [ ! -d "$REPO/$2" ] && mkdir $REPO/$2
+    cp $1 $HOME/dotfiles/$2/$1
+    dotfiles add $2/$1
+    dotfiles commit -m "added $2/$1"
+}
