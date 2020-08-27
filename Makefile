@@ -14,6 +14,9 @@ antigen:
 stow:
 	brew install stow
 
+nvim:
+	brew install neovim
+
 install: stow curl ohmyzsh antigen
 
 sh: config

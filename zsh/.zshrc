@@ -23,7 +23,6 @@ antigen bundle python
 antigen bundle tmux
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle gretzky/auto-color-ls
 antigen bundle arzzen/calc.plugin.zsh
 antigen bundle walesmd/caniuse.plugin.zsh
 antigen bundle sinetoami/web-search
